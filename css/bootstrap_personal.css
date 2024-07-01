@@ -1,0 +1,7 @@
+.bg-primary{
+    background: linear-gradient(360deg, rgba(219,161,206,1) 0%, rgba(149,60,129) 100%);
+}
+
+.bg-secondary{
+    background-color: rgb(244, 238, 243) !important;
+}

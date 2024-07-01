@@ -1,0 +1,58 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', sans-serif;
+    color: rgb(244, 238, 243);
+}
+
+/* body */
+body{
+    background-color: rgb(244, 238, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* container geral */
+#aplicacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#aplicacao:hover{
+    width: 80%;
+}
+
+/* area cards */
+#areaCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* conteudo cards */
+.cards{
+    flex: 1 1 calc(50% - 1rem);
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cards i, p{
+    color: rgb(149,60,129) !important;
+    text-align: center;
+}
+
+.cards:hover{
+    background-color: rgb(228, 214, 228) !important;
+    cursor: pointer;    
+}
+
