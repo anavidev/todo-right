@@ -1,0 +1,53 @@
+@media (max-width: 425px){  
+    .containerCategoria h1{
+    font-size: 1.5rem;
+    width: 100%;
+    }
+
+    #iconCategoria{
+        font-size: 1.5rem;
+    }
+
+    #botaoAdicionar{
+        width: 25%;
+    }
+
+    #botaoVoltar{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 592px){
+    .containerCategoria h1{
+        font-size: 1.3;
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    #botaoAdicionar{
+        width: 15%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #botaoAdicionar{
+        width: 10%;
+    }
+}
+
+@media (min-width: 2560px){
+    .containerCategoria h1{
+    font-size: 4rem;
+    width: 100%;
+    }
+
+    #iconCategoria{
+        font-size: 3rem;
+    }
+
+    #botaoAdicionar{
+        font-size: 4rem;
+        width: 5%;
+    }
+}

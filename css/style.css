@@ -1,5 +1,6 @@
 /* geral */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:'Trebuchet MS', sans-serif;
@@ -23,36 +24,112 @@ body{
     align-items: center;
     text-align: center;
     width: 75%;
+    height: 85%;
     box-shadow: rgba(0,0,0,0.3) 3px 3px 10px;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out; 
 }
 
 #aplicacao:hover{
     width: 80%;
 }
 
-/* area cards */
-#areaCards{
+/* area btn */
+#areaBtn{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-/* conteudo cards */
-.cards{
+/* conteudo btn */
+.btn{
     flex: 1 1 calc(50% - 1rem);
     box-shadow: rgba(0,0,0,0.3) 3px 3px 10px;
     transition: background-color 0.2s ease-in-out;
 }
 
-.cards i, p{
-    color: rgb(149,60,129) !important;
+.btn p, i{
+    color: rgb(149,60,129);
     text-align: center;
 }
 
-.cards:hover{
+.btn:hover{
     background-color: rgb(228, 214, 228) !important;
     cursor: pointer;    
 }
 
+/* tela categorias */
+.containerCategoria{
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCategoria h1{
+    color: rgb(149,60,129);
+    font-size: 2.5rem;
+}
+
+.tarefas{
+    .botaoExcluir{
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+    }
+}
+
+.tarefas:hover{
+    .botaoExcluir{
+        opacity: 1;
+    }
+}
+
+.botaoExcluir{
+    color: rgb(219,161,206);
+    font-size: 1.1rem;
+    transition: color 0.2s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.botaoExcluir:hover{
+    color: rgb(190, 133, 178);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.tarefas label{
+    color: rgb(149,60,129);
+    font-size: 1.3rem;
+}
+
+#iconCategoria, #botaoAdicionar{
+    font-size: 2.5rem;
+}
+
+#botaoVoltar{
+    font-size: 2.5rem;
+    transition: font-size 0.2s ease-in-out;
+}
+
+#botaoVoltar:hover{
+    font-size: 2.3rem;
+}
+
+#botaoAdicionar{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    transition: background-color;
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 8px;
+}
+
+#botaoAdicionar i{
+    color: rgb(244, 238, 243);
+}
+
+#botaoAdicionar:hover{
+    background: linear-gradient(360deg, rgb(190, 133, 178) 0%, rgb(124, 46, 107) 100%);
+}

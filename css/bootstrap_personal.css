@@ -5,3 +5,12 @@
 .bg-secondary{
     background-color: rgb(244, 238, 243) !important;
 }
+
+.btn-check{
+    background-color: rgb(219,161,206);
+    border-color: rgb(149,60,129);
+}
+
+.btn-outline-primary{
+    border-color: rgb(149,60,129);
+}

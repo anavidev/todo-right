@@ -1,5 +1,5 @@
 # ToDoRight
-To Do List.
+ToDoRight é uma aplicação de lista de tarefas que permite adicionar, editar e excluir tarefas.
 
 ## Funcionalidades
 - **Responsividade**: A aplicação pode ser utilizada em diversos tipos de dispositivos com diferentes resoluções.
@@ -10,4 +10,4 @@ Os principais conceitos de programação utilizados foram:
 - Utilização de framework front-end
 
 ## Tecnologias Utilizadas
-- **Bootstrap**: Utilizado para fazer a estilização e responsividade da aplicação.
+- **Bootstrap**: Utilizado para fazer a estilização da aplicação.
