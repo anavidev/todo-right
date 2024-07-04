@@ -48,6 +48,10 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
+.btn a{
+    text-decoration: none;
+}
+
 .btn p, i{
     color: rgb(149,60,129);
     text-align: center;
@@ -97,7 +101,7 @@ body{
     cursor: pointer;
 }
 
-.tarefas label{
+label{
     color: rgb(149,60,129);
     font-size: 1.3rem;
 }
@@ -116,13 +120,12 @@ body{
 }
 
 #botaoAdicionar{
-    width: 5%;
     display: flex;
+    width: 5%;
     justify-content: center;
     align-items: center;
     border: none;
     border-radius: 100%;
-    transition: background-color;
     box-shadow: rgba(0,0,0,0.3) 3px 3px 8px;
 }
 
@@ -131,5 +134,32 @@ body{
 }
 
 #botaoAdicionar:hover{
+    background: linear-gradient(360deg, rgb(190, 133, 178) 0%, rgb(124, 46, 107) 100%);
+    cursor: pointer;
+}
+
+/* tela adicionar tarefa */
+#adicionarTarefa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#adicionarTarefa input, #adicionarTarefa select, #adicionarTarefa option{
+    color: rgb(149,60,129);
+}
+
+#botaoCriar{
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: rgba(0,0,0,0.3) 3px 3px 8px;
+    width: 35%;
+    transition: width 0.3s ease-in-out;
+}
+
+#botaoCriar:hover{
+    width: 38%;
     background: linear-gradient(360deg, rgb(190, 133, 178) 0%, rgb(124, 46, 107) 100%);
 }

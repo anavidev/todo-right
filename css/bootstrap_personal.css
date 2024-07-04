@@ -1,16 +1,11 @@
 .bg-primary{
-    background: linear-gradient(360deg, rgba(219,161,206,1) 0%, rgba(149,60,129) 100%);
+    background: linear-gradient(360deg, rgba(219,161,206,1) 0%, rgb(149,60,129) 100%);
 }
 
 .bg-secondary{
     background-color: rgb(244, 238, 243) !important;
 }
 
-.btn-check{
-    background-color: rgb(219,161,206);
-    border-color: rgb(149,60,129);
-}
-
-.btn-outline-primary{
-    border-color: rgb(149,60,129);
+.btn{
+    color: rgb(244, 238, 243);
 }
