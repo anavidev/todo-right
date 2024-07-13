@@ -22,6 +22,10 @@ export function salvarTarefaSaude(){
     let containerLista = document.querySelector('.listaTarefas');
     containerLista.innerHTML = "";
 
+    if (localStorage.itemTarefa){
+        listaDeTarefas = JSON.parse(localStorage.getItem('itemTarefa'));
+    }
+
     for (let tarefa in listaDeTarefas){
         if (listaDeTarefas[tarefa].categoria === '1'){
             const listaTarefasSaude = document.querySelector('#listaTarefasSaude');
@@ -50,6 +54,10 @@ export function salvarTarefaSaude(){
 export function salvarTarefaEstudo(){
     let containerLista = document.querySelector('.listaTarefas');
     containerLista.innerHTML = "";
+
+    if (localStorage.itemTarefa){
+        listaDeTarefas = JSON.parse(localStorage.getItem('itemTarefa'));
+    }
 
     for (let tarefa in listaDeTarefas){
         if (listaDeTarefas[tarefa].categoria === '2'){
@@ -80,6 +88,10 @@ export function salvarTarefaHobby(){
     let containerLista = document.querySelector('.listaTarefas');
     containerLista.innerHTML = "";
 
+    if (localStorage.itemTarefa){
+        listaDeTarefas = JSON.parse(localStorage.getItem('itemTarefa'));
+    }
+
     for (let tarefa in listaDeTarefas){
         if (listaDeTarefas[tarefa].categoria === '3'){
             const listaTarefasHobby = document.querySelector('#listaTarefasHobby');
@@ -108,6 +120,10 @@ export function salvarTarefaHobby(){
 export function salvarTarefaOutros(){
     let containerLista = document.querySelector('.listaTarefas');
     containerLista.innerHTML = "";
+
+    if (localStorage.itemTarefa){
+        listaDeTarefas = JSON.parse(localStorage.getItem('itemTarefa'));
+    }
 
     for (let tarefa in listaDeTarefas){
         if (listaDeTarefas[tarefa].categoria === '4'){
