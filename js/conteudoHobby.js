@@ -8,21 +8,13 @@ export default () => {
         </a>    
         <i class="bi-emoji-smile" id="iconCategoria"></i>
         <h1 class="mx-3">Hobby</h1>
-        <div class="listaTarefas container-fluid mt-3 mb-5">
-            <div class="tarefas container-fluid">
+        <div class="listaTarefas container-fluid mt-3 mb-5" id="listaTarefasHobby">
+            <div class="tarefas done container-fluid">
                 <input type="checkbox" class="checkTarefa" id="checkBtn1">
                 <label for="checkBtn1">Tarefa 1</label>
-                <i class="botaoExcluir bi-trash-fill mx-1"></i>
-            </div>
-            <div class="tarefas container-fluid">
-                <input type="checkbox" class="checkTarefa" id="checkBtn2">
-                <label for="checkBtn2">Tarefa 2</label>
-                <i class="botaoExcluir bi-trash-fill mx-1"></i>
-            </div>
-            <div class="tarefas container-fluid">
-                <input type="checkbox" class="checkTarefa" id="checkBtn3">
-                <label for="checkBtn3">Tarefa 3</label>
-                <i class="botaoExcluir bi-trash-fill mx-1"></i>
+                <button>
+                    <i class="iconLixeira bi-trash-fill mx-1"></i>
+                </button>
             </div>
         </div>
         <div class="container-fluid bg-primary position-absolute bottom-0 end-0 me-3 mb-2" id="botaoAdicionar">

@@ -13,7 +13,7 @@ export default () => {
         <div class="btn container-fluid bg-secondary rounded-5 m-2 pt-4" id="btnEstudo">
             <a href="#estudo">
                 <i class="bi-book fs-1"></i>
-                <p class="fs-2 fw-bold">Estudo</p>
+                <p class="fs-2 fw-bold">Estudos</p>
             </a>    
         </div>
         <div class="btn container-fluid bg-secondary rounded-5 m-2 pt-4" id="btnHobby">
