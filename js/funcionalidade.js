@@ -15,6 +15,7 @@ export function adicionarTarefa(){
     botaoCriar.addEventListener('click', adicionarTarefa);
 
     novaTarefa = document.querySelector('#nomeTarefa').value = "";
+    categoriaTarefa = document.querySelector('#categoriaTarefa').value = 'Escolha';
 }
 
 /* adicionar tarefas na aplicação */
@@ -36,7 +37,8 @@ export function salvarTarefaSaude(){
             checkCriada.className = 'checkTarefa me-2';;
             const labelCriada = document.createElement('label');
             labelCriada.innerText = listaDeTarefas[tarefa].descricao;
-            const botaoExcluir = document.createElement('button');  
+            const botaoExcluir = document.createElement('button');
+            botaoExcluir.className = 'botaoExcluir';
             const iconLixeira = document.createElement('i');
             iconLixeira.className = 'iconLixeira bi-trash-fill mx-1';
 
@@ -46,6 +48,13 @@ export function salvarTarefaSaude(){
             tarefaCriada.appendChild(botaoExcluir);
 
             listaTarefasSaude.appendChild(tarefaCriada);
+
+            botaoExcluir.addEventListener('click', () => {
+                tarefaCriada.remove();
+
+                listaDeTarefas.splice(listaDeTarefas.indexOf(listaDeTarefas[tarefa]), 1);
+                localStorage.itemTarefa = JSON.stringify(listaDeTarefas); 
+            });
         } 
     }    
 
@@ -70,6 +79,7 @@ export function salvarTarefaEstudo(){
             const labelCriada = document.createElement('label');
             labelCriada.innerText = listaDeTarefas[tarefa].descricao;
             const botaoExcluir = document.createElement('button');
+            botaoExcluir.className = 'botaoExcluir';
             const iconLixeira = document.createElement('i');
             iconLixeira.className = 'iconLixeira bi-trash-fill mx-1';
 
@@ -79,6 +89,13 @@ export function salvarTarefaEstudo(){
             tarefaCriada.appendChild(botaoExcluir);
 
             listaTarefasEstudo.appendChild(tarefaCriada);
+
+            botaoExcluir.addEventListener('click', () => {
+                tarefaCriada.remove();
+
+                listaDeTarefas.splice(listaDeTarefas.indexOf(listaDeTarefas[tarefa]), 1);
+                localStorage.itemTarefa = JSON.stringify(listaDeTarefas); 
+            });
         } 
     }    
 
@@ -103,6 +120,7 @@ export function salvarTarefaHobby(){
             const labelCriada = document.createElement('label');
             labelCriada.innerText = listaDeTarefas[tarefa].descricao;
             const botaoExcluir = document.createElement('button');
+            botaoExcluir.className = 'botaoExcluir';
             const iconLixeira = document.createElement('i');
             iconLixeira.className = 'iconLixeira bi-trash-fill mx-1';
 
@@ -112,6 +130,13 @@ export function salvarTarefaHobby(){
             tarefaCriada.appendChild(botaoExcluir);
 
             listaTarefasHobby.appendChild(tarefaCriada);
+
+            botaoExcluir.addEventListener('click', () => {
+                tarefaCriada.remove();
+
+                listaDeTarefas.splice(listaDeTarefas.indexOf(listaDeTarefas[tarefa]), 1);
+                localStorage.itemTarefa = JSON.stringify(listaDeTarefas); 
+            });
         } 
     }    
 
@@ -136,6 +161,7 @@ export function salvarTarefaOutros(){
             const labelCriada = document.createElement('label');
             labelCriada.innerText = listaDeTarefas[tarefa].descricao;
             const botaoExcluir = document.createElement('button');
+            botaoExcluir.className = 'botaoExcluir';
             const iconLixeira = document.createElement('i');
             iconLixeira.className = 'iconLixeira bi-trash-fill mx-1';
 
@@ -145,8 +171,14 @@ export function salvarTarefaOutros(){
             tarefaCriada.appendChild(botaoExcluir);
 
             listaTarefasOutros.appendChild(tarefaCriada);
+
+            botaoExcluir.addEventListener('click', () => {
+                tarefaCriada.remove();
+
+                listaDeTarefas.splice(listaDeTarefas.indexOf(listaDeTarefas[tarefa]), 1);
+                localStorage.itemTarefa = JSON.stringify(listaDeTarefas); 
+            });
         } 
     }    
 
 }
-
