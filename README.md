@@ -1,3 +1,5 @@
+**Status do Projeto: Em Desenvolvimento 🚧**
+____________________
 # ToDoRight
 ToDoRight é uma aplicação de lista de tarefas que permite adicionar e excluir tarefas.
 
